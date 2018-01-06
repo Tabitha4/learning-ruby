@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shiny Objects App</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <%= csrf_meta_tags %>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Tab Codes</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <form class="navbar-form navbar-right">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form><!-- end form -->
+        </div><!-- end navbar-collapse -->
+      </div><!-- end container-fluid -->
+    </nav><!-- end navbar -->
+
+    <%= yield %>
+
+    <footer class="sticky-footer" id="sticky-footer">
+      <div class="container-fluid footerContent">
+        <div class="footer-links-container">
+          <span class="footer-link"><a href="#">Home</a></span>
+          <span class="footer-link"><a href="#">About</a></span>
+          <span class="footer-link"><a href="#">Contact</a></span>
+          <span class="footer-link"><a href="#">Products</a></span>
+        </div>
+        <div class="footer-icons">
+          <span><a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></span>
+          <span><a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></span>
+          <span><a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></span>
+        </div>
+        <span class="text-muted copyright">&copy; 2017 Tab Codes</span>
+      </div><!-- end footer icons -->
+    </footer><!-- sticky end footer -->
+
+  </body><!-- end of footer -->
+</html><!-- end html -->
