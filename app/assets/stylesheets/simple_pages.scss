@@ -23,19 +23,15 @@ body {
   color: #fff;
 }
 
-
-.navbar-default .navbar-nav>li>a {
+.navbar-default .navbar-nav li a {
   color: #fff;
 }
 
 
-.navbar-default .navbar-nav>.active>a,
-.navbar-default .navbar-nav>.active>a:focus,
-.navbar-default .navbar-nav>.active>a:hover {
-  color: #000;
-  background-color: #fff;
+li a:hover {
+  background-color: red;
+  color: white;
 }
-
 
 .footer-icons a:hover{
   color: #1560BD;
@@ -67,7 +63,6 @@ ul.nav.navbar-nav {
   padding-top: 0;
 }
 
-
 .my-image {
   margin: 0 auto;
   max-width: 100%;
@@ -75,6 +70,9 @@ ul.nav.navbar-nav {
   padding-bottom: 75px;
 }
 
+.last-image {
+  margin-bottom: 100px;
+}
 
 .my-image-About {
   margin: 0 auto;
@@ -100,6 +98,35 @@ ul.nav.navbar-nav {
   text-align: center;
 }
 
+.row {
+  padding-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  margin-left: 20px;
+  margin-right: 15px;
+}
+
+.card {
+  height: 100%;
+}
+
+.card-title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.shiny-products {
+  align: center;
+  margin-top: 15px;
+}
+
+.shiny-btn {
+  margin-bottom: 20px;
+}
+
+.lead {
+  text-align: center;
+}
 
 .sticky-footer {
   background-color: #829FC4;
