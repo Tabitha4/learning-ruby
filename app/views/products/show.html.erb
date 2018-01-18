@@ -1,0 +1,32 @@
+<section>
+  <div class="show">
+
+    <p id="notice"><%= notice %></p>
+
+    <p>
+      <strong>What it looks like:</strong>
+      <%= @product.image_url %>
+    </p>
+
+    <p>
+      <strong>What we call it:</strong>
+      <%= @product.name %>
+    </p>
+
+    <p>
+      <strong>What it'll cost you:</strong>
+      <%= @product.price %>
+    </p>
+
+    <p>
+      <strong>What makes it worth it:</strong>
+      <%= @product.description %>
+    </p>
+
+
+
+    <%= link_to 'Edit', edit_product_path(@product) %> |
+    <%= link_to 'Back', products_path %>
+
+  </div><!--end of show main div-->
+</section>

@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<!-- Jumbotron Header -->
+<div class="container">
+  <header class="jumbotron shiny-header">
+    <h1 class="display-3">Make a <strong>S</strong>hiny <strong>O</strong>bjects  <strong>S</strong>election</h1>
+    <p class="lead">Life is better with a little shine. Grab some shiny!</p>
+  </header>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Image url</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Description</th>
+      <th colspan="4"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @products.each do |product| %>
+      <tr>
+        <td><%= product.image_url %></td>
+        <td><%= product.name %></td>
+        <td><%= product.price %></td>
+        <td><%= product.description %></td>
+        <td><%= link_to 'Show', product %></td>
+        <td><%= link_to 'Edit', edit_product_path(product) %></td>
+        <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Product', new_product_path %>
