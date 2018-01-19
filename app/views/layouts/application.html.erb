@@ -29,10 +29,14 @@
         <div class="collapse navbar-collapse nav-list" id="navbar-collapse-1">
 
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="../simple_pages/index" class="nav-links active">Home <span class="sr-only">(current)</span></a></li>
-            <li><a href="../simple_pages/about" class="nav-links">About</a></li>
-            <li><a href="../simple_pages/contact" class="nav-links">Contact</a></li>
-            <li><a href="../products" class="nav-links">Products</a></li>
+            <li><%= link_to "Home", simple_pages_index_path %></li>
+            <li><%= link_to "About", simple_pages_about_path %></li>
+            <li><%= link_to "Products", products_path %></li>
+            <li><%= link_to "Contact", simple_pages_contact_path %></li>
+            <!-- <li><a href="../simple_pages/index" class="nav-links active">Home <span class="sr-only">(current)</span></a></li> -->
+            <!-- <li><a href="../simple_pages/about" class="nav-links">About</a></li> -->
+            <!-- <li><a href="../simple_pages/contact" class="nav-links">Contact</a></li> -->
+            <!-- <li><a href="../products" class="nav-links">Products</a></li> -->
           </ul>
 
         </div><!-- end navbar-collapse -->
@@ -44,10 +48,14 @@
     <footer class="sticky-footer" id="sticky-footer">
       <div class="container-fluid footerContent">
         <div class="footer-links-container">
-          <span class="footer-link"><a href="../simple_pages/index">Home</a></span>
-          <span class="footer-link"><a href="../simple_pages/about">About</a></span>
-          <span class="footer-link"><a href="../simple_pages/contact">Contact</a></span>
-          <span class="footer-link"><a href="../products">Products</a></span>
+          <span class="footer-link"><%= link_to "Home", simple_pages_index_path %></span>
+          <span class="footer-link"><%= link_to "About", simple_pages_about_path %></span>
+          <span class="footer-link"><%= link_to "Products", products_path %></span>
+          <span class="footer-link"><%= link_to "Contact", simple_pages_contact_path %></span>
+          <!-- <span class="footer-link"><a href="../simple_pages/index">Home</a></span> -->
+          <!-- <span class="footer-link"><a href="../simple_pages/about">About</a></span> -->
+          <!-- <span class="footer-link"><a href="../simple_pages/contact">Contact</a></span> -->
+          <!-- <span class="footer-link"><a href="../products">Products</a></span> -->
         </div>
         <div class="footer-icons">
           <span><a href="https://twitter.com/4Tabby4"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></span>
