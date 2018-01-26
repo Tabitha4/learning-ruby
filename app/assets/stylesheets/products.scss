@@ -1,3 +1,60 @@
 // Place all the styles related to the products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.products_wrapper {
+  max-width: 100%;
+}
+
+.sub_header {
+  background-image: url("products_banner-igor-ovsyannykov-atUnsplash.jpg");
+  background-size: cover;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 60px;
+  padding: 27px 0;
+  letter-spacing: 3px;
+  color: #fff;
+  font-size: 3em;
+  text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+}
+
+// not sure how this has been created
+.carousel-inner .item a img,
+.carousel-inner .item img,
+.img-responsive,
+.thumbnail a img,
+.thumbnail img {
+  display: inline;
+}
+
+.product_banner {
+  margin-top: 20px;
+  margin-bottom: 120px;
+  max-width: 100%;
+  height: auto;
+}
+
+.take_a_peek {
+  font-size: 1.5em;;
+}
+
+.edit_destroy_links {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.editing_products_form {
+  padding-top: 40px;
+}
+
+.show_products_page {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.show_back_links {
+  text-align: center;
+  padding-top: 40px;
+}

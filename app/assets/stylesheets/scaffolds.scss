@@ -19,14 +19,15 @@ pre {
 }
 
 a {
-  color: #000;
+  color: #1560BD;
 
   &:visited {
-    color: #666;
+    color: #1560BD;
   }
 
   &:hover {
-    color: #fff;
+    color: #000;
+    text-decoration: underline;
   }
 }
 
@@ -42,6 +43,7 @@ td {
 div {
   &.field, &.actions {
     margin-bottom: 10px;
+    text-align: center;
   }
 }
 

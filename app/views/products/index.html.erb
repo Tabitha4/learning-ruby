@@ -1,39 +1,47 @@
 <p id="notice"><%= notice %></p>
 
-<!-- Jumbotron Header -->
-<div class="container">
+  <!-- Jumbotron Header -->
   <header class="jumbotron shiny-header">
-    <h1 class="display-3">Make a <strong>S</strong>hiny <strong>O</strong>bjects  <strong>S</strong>election</h1>
+    <h1 class="display-3">Make a <strong>S</strong>hiny <strong>O</strong>bjects <strong>S</strong>election</h1>
     <p class="lead">Life is better with a little shine. Grab some shiny!</p>
   </header>
-</div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Image url</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+  <section>
+    <h2 class="sub_header" style="text-align: center"><strong>SOS Collection</strong></h2>
+  </section>
 
-  <tbody>
-    <% @products.each do |product| %>
-      <tr>
-        <td><%= product.name %></td>
-        <td><%= product.description %></td>
-        <td><%= product.image_url %></td>
-      </tr>
-      <tr>
-        <td><%= link_to 'Show', product %></td>
-        <td><%= link_to 'Edit', edit_product_path(product) %></td>
-        <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+  <% @products.each do |product| %>
+  <div class="container-fluid products_wrapper">
+    <div class="row text-center products_row">
+      <div class="col-md-12 products_columns">
+        <div class="card">
 
-<br>
+          <div class="product_images">
+            <%= image_tag("shiny1-igor-ovsyannykov-atUnsplash.jpg", class:"img-responsive img-rounded shiny-product", alt: "One bubble lights that shines!") %>
+          </div>
 
-<%= link_to 'New Product', new_product_path %>
+          <div class="card-body">
+            <h3 class="card-title"><%= product.name %></h3>
+            <h4 class="card-text"><%= product.description %></h4>
+            <h6><strong>Colour: </strong><%= product.colour %></h6>
+            <h5>$8.99</h5>
+          </div>
+
+          <div class="card-footer take_a_peek">
+            <%= link_to 'Take a Peek!', product %>
+          </div>
+
+          <div class="edit_destroy_links">
+            <%= link_to 'Edit', edit_product_path(product) %> |
+            <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
+          </div>
+
+
+        </div><!-- /card -->
+      </div><!-- /column -->
+    </div><!-- /row -->
+  </div><!-- /container -->
+<% end %>
+
+  <div class="new_product" style="text-align: center"><%= link_to 'New Product', new_product_path %></div>
+  <%= image_tag("products_banner-igor-ovsyannykov-atUnsplash.jpg", class:"img-responsive product_banner", alt: "A string of shiny bubble lights that shine!") %>
