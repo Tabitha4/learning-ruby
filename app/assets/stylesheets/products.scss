@@ -19,20 +19,15 @@
   text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
 }
 
-// not sure how this has been created
-.carousel-inner .item a img,
-.carousel-inner .item img,
-.img-responsive,
-.thumbnail a img,
-.thumbnail img {
-  display: inline;
-}
-
 .product_banner {
   margin-top: 20px;
   margin-bottom: 120px;
   max-width: 100%;
   height: auto;
+}
+
+.product_images {
+
 }
 
 .take_a_peek {
@@ -55,6 +50,11 @@
 }
 
 .show_back_links {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.back_button {
   text-align: center;
   padding-top: 40px;
 }

@@ -10,9 +10,10 @@
     <h2 class="sub_header" style="text-align: center"><strong>SOS Collection</strong></h2>
   </section>
 
-  <% @products.each do |product| %>
+
   <div class="container-fluid products_wrapper">
     <div class="row text-center products_row">
+      <% @products.each do |product| %>
       <div class="col-md-12 products_columns">
         <div class="card">
 
@@ -36,12 +37,12 @@
             <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
           </div>
 
-
         </div><!-- /card -->
       </div><!-- /column -->
+      <% end %>
     </div><!-- /row -->
   </div><!-- /container -->
-<% end %>
+
 
   <div class="new_product" style="text-align: center"><%= link_to 'New Product', new_product_path %></div>
   <%= image_tag("products_banner-igor-ovsyannykov-atUnsplash.jpg", class:"img-responsive product_banner", alt: "A string of shiny bubble lights that shine!") %>
