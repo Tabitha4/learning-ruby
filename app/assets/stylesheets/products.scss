@@ -27,7 +27,16 @@
 }
 
 .product_images {
+  display: inline-block;
+}
 
+div.card-body {
+  width: 300px;
+  margin: 0 auto !important;
+}
+
+.card-text {
+  display: inline;
 }
 
 .take_a_peek {
