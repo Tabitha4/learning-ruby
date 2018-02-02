@@ -140,7 +140,6 @@ ul.nav.navbar-nav {
   line-height: 40px;
 }
 
-
 .footer-link {
   padding-left:20px;
   padding-right: 20px;
@@ -151,9 +150,21 @@ ul.nav.navbar-nav {
   color: #fff;
 }
 
-
 .footer-icons a{
   color: #fff;
   padding-left:20px;
   padding-right: 20px;
+}
+
+.feature_product_title {
+  letter-spacing: 3px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  text-decoration: underline;
+}
+
+.featured_product {
+  text-align: center;
+  font-size: 3em;
+  font-style: italic;
 }
