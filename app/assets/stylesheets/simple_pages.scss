@@ -50,6 +50,7 @@ h1 {
 h2 {
   color: #829FC4;
   margin-bottom: 20px;
+  padding-bottom: 20px;
   text-align: center;
 }
 
@@ -64,21 +65,34 @@ ul.nav.navbar-nav {
 }
 
 .my-image {
+  border-radius: 10px 10px 10px 10px;
   margin: 0 auto;
   max-width: 100%;
   height: auto;
-  padding-bottom: 75px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.6);
 }
 
-.last-image {
-  margin-bottom: 100px;
+.lure-words {
+  font-family: sans-serif;
+  font-size: 30px;
+  color: #1560BD;
+  text-align: center;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.get-it {
+  margin-bottom: 220px;
+  text-transform: uppercase;
 }
 
 .my-image-About {
   margin: 0 auto;
   max-width: 100%;
   height: auto;
-  padding-bottom: 120px;
+  margin-bottom: 220px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.6);
 }
 
 
@@ -87,6 +101,8 @@ ul.nav.navbar-nav {
   max-width: 80%;
   background-color: #E6EFFA;
   margin-top: 30px;
+  margin-bottom: 100px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.6);
 }
 
 
@@ -94,14 +110,27 @@ ul.nav.navbar-nav {
   color: #1560BD;
 }
 
+.my-image-contact {
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+}
 
 .contactInfo {
   color: #1560BD;
   text-align: center;
 }
 
-.email {
-  padding-bottom: 60px;
+.final-words {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 30px;
+  color: #1560BD;
+  margin-top: 15px;
+  padding-bottom: 10px;
+}
+
+.last-final-words {
+  margin-bottom: 250px;
 }
 
 .row {
