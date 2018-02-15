@@ -28,6 +28,7 @@
 
 .product_images {
   display: inline-block;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
 }
 
 div.card-body {
@@ -68,6 +69,7 @@ div.card-body {
   padding-top: 40px;
 }
 
-.featured_product {
+.featured-product-name {
   margin: 0 auto;
+  text-align: center;
 }
