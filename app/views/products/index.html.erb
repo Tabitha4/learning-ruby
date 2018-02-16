@@ -16,12 +16,15 @@
       <div class="col-md-12 products_columns">
 
         <div class="card">
+          <h3 class="card-title"><%= product.name %></h3>
           <div class="product_images">
-            <%= product.image_url %>
+            <% if product.image_url.present? %>
+              <%= image_tag(product.image_url) %>
+            <% end %>
           </div>
 
           <div class="card-body">
-            <h3 class="card-title"><%= product.name %></h3>
+
             <h4 class="card-text"><%= product.description %></h4>
             <h6><strong>Colour: </strong><%= product.colour %></h6>
             <h6><strong>Price: </strong>$<%= product.price %> CAD</h6>

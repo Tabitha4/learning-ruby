@@ -29,11 +29,18 @@
 .product_images {
   display: inline-block;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+  margin-bottom: 30px;
 }
 
 div.card-body {
   width: 300px;
   margin: 0 auto !important;
+}
+
+.card-title {
+  color: #1560BD;
+  font-size: 2em;
+  font-weight: 600;
 }
 
 .card-text {
@@ -47,7 +54,7 @@ div.card-body {
 .edit_destroy_links {
   text-align: center;
   padding-top: 10px;
-  padding-bottom: 20px;
+  padding-bottom: 60px;
 }
 
 .editing_products_form {
@@ -59,9 +66,32 @@ div.card-body {
   margin-top: 100px;
 }
 
+.show-product-name {
+  color: #1560BD;
+  font-size: 5em;
+  font-weight: 600;
+  margin-bottom: 60px;
+}
+
+.product-description {
+  font-weight: 600;
+  font-style: italic;
+}
+
+.product-price {
+  margin-bottom: 60px;
+}
+
 .show_back_links {
   text-align: center;
   padding-top: 40px;
+}
+
+.image-shaping {
+  display: inline-block;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
 }
 
 .back_button {
@@ -72,4 +102,15 @@ div.card-body {
 .featured-product-name {
   margin: 0 auto;
   text-align: center;
+}
+
+.featured-product-image {
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.feature-image {
+  border-radius: 10px;
 }

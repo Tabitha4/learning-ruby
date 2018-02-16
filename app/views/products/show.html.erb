@@ -1,15 +1,15 @@
 <p id="notice"><%= notice %></p>
 <div class="show_products_page">
 
-    <p>
+    <p class="show-product-name">
       <%= @product.name %>
     </p>
 
     <p>
-      <%= image_tag @product.image_url %>
+      <%= image_tag(@product.image_url, class: "img-responsive image-shaping" ) %>
     </p>
 
-    <p>
+    <p class="product-description">
       <%= @product.description %>
     </p>
 
@@ -18,9 +18,9 @@
       <%= @product.colour %>
     </p>
 
-    <p>
+    <p class="product-price">
       <strong>Price:</strong>
-      <%= @product.price %>
+      $<%= @product.price %> CAD
     </p>
 
 
