@@ -1,0 +1,459 @@
+/* line 5, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/products.scss */
+.products_wrapper {
+  max-width: 100%;
+}
+
+/* line 9, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/products.scss */
+.sub_header {
+  background-image: url("products_banner-igor-ovsyannykov-atUnsplash.jpg");
+  background-size: cover;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 60px;
+  padding: 27px 0;
+  letter-spacing: 3px;
+  color: #fff;
+  font-size: 3em;
+  text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+}
+
+/* line 22, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/products.scss */
+.product_banner {
+  margin-top: 20px;
+  margin-bottom: 120px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 29, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/products.scss */
+.product_images {
+  display: inline-block;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+  margin-bottom: 30px;
+}
+
+/* line 35, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/products.scss */
+div.card-body {
+  width: 300px;
+  margin: 0 auto !important;
+}
+
+/* line 40, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/products.scss */
+.card-title {
+  color: #1560BD;
+  font-size: 2em;
+  font-weight: 600;
+}
+
+/* line 46, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/products.scss */
+.card-text {
+  display: inline;
+}
+
+/* line 50, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/products.scss */
+.take_a_peek {
+  font-size: 1.5em;
+}
+
+/* line 54, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/products.scss */
+.edit_destroy_links {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 60px;
+}
+
+/* line 60, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/products.scss */
+.editing_products_form {
+  padding-top: 40px;
+}
+
+/* line 64, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/products.scss */
+.show_products_page {
+  text-align: center;
+  margin-top: 100px;
+}
+
+/* line 69, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/products.scss */
+.show-product-name {
+  color: #1560BD;
+  font-size: 5em;
+  font-weight: 600;
+  margin-bottom: 60px;
+}
+
+/* line 76, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/products.scss */
+.product-description {
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* line 81, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/products.scss */
+.product-price {
+  margin-bottom: 60px;
+}
+
+/* line 85, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/products.scss */
+.show_back_links {
+  text-align: center;
+  padding-top: 40px;
+}
+
+/* line 90, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/products.scss */
+.image-shaping {
+  display: inline-block;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* line 97, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/products.scss */
+.back_button {
+  text-align: center;
+  padding-top: 40px;
+}
+
+/* line 102, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/products.scss */
+.featured-product-name {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* line 107, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/products.scss */
+.featured-product-image {
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+/* line 114, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/products.scss */
+.feature-image {
+  border-radius: 10px;
+}
+/* line 1, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 9, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 15, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 21, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #1560BD;
+}
+/* line 24, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #1560BD;
+}
+/* line 28, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+/* line 34, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+  padding-right: 10px;
+}
+
+/* line 39, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding: 0 10px 7px;
+}
+
+/* line 44, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* line 50, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 54, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 60, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px 7px 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 67, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px -7px 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 77, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 83, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+/* line 5, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/simple_pages.scss */
+body {
+  color: #000;
+}
+
+/* line 10, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/simple_pages.scss */
+.navbar-brand {
+  font-family: 'Sedgwick Ave Display', cursive;
+  font-size: 2em;
+}
+
+/* line 16, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/simple_pages.scss */
+.navbar-default {
+  background-color: #829FC4;
+  border: none;
+}
+
+/* line 22, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/simple_pages.scss */
+.navbar-default .navbar-brand {
+  color: #fff;
+}
+
+/* line 26, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/simple_pages.scss */
+.navbar-default .navbar-nav li a {
+  color: #fff;
+}
+
+/* line 31, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/simple_pages.scss */
+li a:hover {
+  background-color: red;
+  color: white;
+}
+
+/* line 36, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/simple_pages.scss */
+.footer-icons a:hover {
+  color: #1560BD;
+}
+
+/* line 41, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/simple_pages.scss */
+h1 {
+  font-family: sans-serif;
+  font-size: 72px;
+  color: #1560BD;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* line 50, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/simple_pages.scss */
+h2 {
+  color: #829FC4;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+/* line 58, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/simple_pages.scss */
+ul {
+  padding-top: 30px;
+}
+
+/* line 63, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/simple_pages.scss */
+ul.nav.navbar-nav {
+  padding-top: 0;
+}
+
+/* line 67, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/simple_pages.scss */
+.my-image {
+  border-radius: 10px 10px 10px 10px;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* line 75, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/simple_pages.scss */
+.lure-words {
+  font-family: sans-serif;
+  font-size: 30px;
+  color: #1560BD;
+  text-align: center;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+/* line 84, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/simple_pages.scss */
+.get-it {
+  margin-bottom: 220px;
+  text-transform: uppercase;
+}
+
+/* line 89, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/simple_pages.scss */
+.my-image-About {
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 220px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* line 99, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/simple_pages.scss */
+.jumbotron {
+  margin: 0 auto;
+  max-width: 80%;
+  background-color: #E6EFFA;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* line 109, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/simple_pages.scss */
+.jumbotron h1 {
+  color: #1560BD;
+}
+
+/* line 113, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/simple_pages.scss */
+.my-image-contact {
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* line 118, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/simple_pages.scss */
+.contactInfo {
+  color: #1560BD;
+  text-align: center;
+}
+
+/* line 123, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/simple_pages.scss */
+.final-words {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 30px;
+  color: #1560BD;
+  margin-top: 15px;
+  padding-bottom: 10px;
+}
+
+/* line 132, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/simple_pages.scss */
+.last-final-words {
+  margin-bottom: 250px;
+}
+
+/* line 136, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/simple_pages.scss */
+.row {
+  padding-bottom: 20px;
+  margin: 20px;
+}
+
+/* line 141, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/simple_pages.scss */
+.card {
+  height: 100%;
+}
+
+/* line 145, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/simple_pages.scss */
+.card-title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* line 150, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/simple_pages.scss */
+.shiny-products {
+  align: center;
+  margin-top: 15px;
+}
+
+/* line 155, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/simple_pages.scss */
+.shiny-btn {
+  margin-bottom: 20px;
+}
+
+/* line 159, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/simple_pages.scss */
+.lead {
+  text-align: center;
+}
+
+/* line 163, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/simple_pages.scss */
+.sticky-footer {
+  background-color: #829FC4;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  line-height: 40px;
+}
+
+/* line 172, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/simple_pages.scss */
+.footer-link {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* line 178, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/simple_pages.scss */
+.footer-link a {
+  color: #fff;
+}
+
+/* line 182, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/simple_pages.scss */
+.footer-icons a {
+  color: #fff;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* line 188, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/simple_pages.scss */
+.feature_product_title {
+  letter-spacing: 3px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  text-decoration: underline;
+}
+
+/* line 195, /Users/4tabitha4/Desktop/simple-ruby/app/assets/stylesheets/simple_pages.scss */
+.featured_product {
+  text-align: center;
+  font-size: 3em;
+  font-style: italic;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
