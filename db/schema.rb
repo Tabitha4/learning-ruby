@@ -10,7 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180131100955) do
+ActiveRecord::Schema.define(version: 20180217132011) do
+
+  create_table "orders", force: :cascade do |t|
+    t.integer "user_id"
+    t.string "product_id_integer"
+    t.float "total"
+    t.index ["product_id_integer"], name: "index_orders_on_product_id_integer"
+    t.index ["user_id"], name: "index_orders_on_user_id"
+  end
 
   create_table "products", force: :cascade do |t|
     t.string "name"

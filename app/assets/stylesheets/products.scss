@@ -43,6 +43,7 @@ div.card-body {
   font-weight: 600;
 }
 
+
 .card-text {
   display: inline;
 }
@@ -68,8 +69,9 @@ div.card-body {
 
 .show-product-name {
   color: #1560BD;
-  font-size: 5em;
-  font-weight: 600;
+  font-size: 6vw;
+  font-weight: 400;
+  line-height: normal;
   margin-bottom: 60px;
 }
 
@@ -85,6 +87,20 @@ div.card-body {
 .show_back_links {
   text-align: center;
   padding-top: 40px;
+}
+
+.edit-back-show-page {
+  margin-bottom: 200px;
+}
+
+.blurb {
+  margin-bottom: 40px;
+  color: #1560BD;
+}
+
+
+.update-button {
+  margin-bottom: 200px;
 }
 
 .image-shaping {

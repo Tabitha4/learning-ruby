@@ -1,5 +1,5 @@
 <p id="notice"><%= notice %></p>
-<div class="show_products_page">
+<div class="show_products_page container-fluid">
 
     <p class="show-product-name">
       <%= @product.name %>
@@ -23,8 +23,11 @@
       $<%= @product.price %> CAD
     </p>
 
+    <div class="edit-back-show-page">
+      <%= link_to 'Edit', edit_product_path(@product) %> |
+      <%= link_to 'Back', products_path %>
+    </div>
 
-    <%= link_to 'Edit', edit_product_path(@product) %> |
-    <%= link_to 'Back', products_path %>
+    <p class="blurb"><i>Keep checking for new Shiny's!</i></p>
 
 </div>

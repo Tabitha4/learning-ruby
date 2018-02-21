@@ -1,6 +1,7 @@
-<header>
-  <h1 class="feature_product_title">Featured Product</h1>
-</header>
+<div class="container-fluid">
+  <header>
+    <h1 class="feature_product_title">Featured Product</h1>
+  </header>
 
   <section class="featured-product-name">
     <h2><%= @featured_product.name %></h2>
@@ -9,3 +10,4 @@
   <div class="featured-product-image">
     <%= image_tag(@featured_product.image_url, class: "img-responsive feature-image") %>
   </div>
+<div>
