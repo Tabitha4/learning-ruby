@@ -1,12 +1,12 @@
 <p id="notice"><%= notice %></p>
 <div class="show_products_page container-fluid">
 
-    <p class="show-product-name">
-      <%= @product.name %>
-    </p>
-
     <p>
       <%= image_tag(@product.image_url, class: "img-responsive image-shaping" ) %>
+    </p>
+
+    <p class="show-product-name">
+      <%= @product.name %>
     </p>
 
     <p class="product-description">

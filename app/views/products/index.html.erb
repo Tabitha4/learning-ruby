@@ -11,40 +11,10 @@
   </section>
 
   <div class="container-fluid products_wrapper">
-    <div class="row text-center products_row">
-      <% @products.each do |product| %>
-      <div class="col-md-12 products_columns">
-
-        <div class="card">
-          <h3 class="card-title"><%= product.name %></h3>
-          <div class="product_images">
-            <% if product.image_url.present? %>
-              <%= image_tag(product.image_url) %>
-            <% end %>
-          </div>
-
-          <div class="card-body">
-
-            <h4 class="card-text"><%= product.description %></h4>
-            <h6><strong>Colour: </strong><%= product.colour %></h6>
-            <h6><strong>Price: </strong>$<%= product.price %> CAD</h6>
-          </div>
-
-          <div class="card-footer take_a_peek">
-            <%= link_to 'Take a Peek!', product %>
-          </div>
-
-          <div class="edit_destroy_links">
-            <%= link_to 'Edit', edit_product_path(product) %> |
-            <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
-          </div>
-
-        </div><!-- /card -->
-      </div><!-- /column -->
-      <% end %>
-    </div><!-- /row -->
+    <% @products.each do |product| %>
+    <% end %>
+    <%= render @products %>
   </div><!-- /container -->
-
 
   <div class="new_product" style="text-align: center"><%= link_to 'New Product', new_product_path %></div>
   <%= image_tag("products_banner-igor-ovsyannykov-atUnsplash.jpg", class:"img-responsive product_banner", alt: "A string of shiny bubble lights that shine!") %>
