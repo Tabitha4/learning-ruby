@@ -40,7 +40,7 @@ li a:hover {
 
 h1 {
   font-family: sans-serif;
-  font-size: 4vw;
+  font-size: 8vw;
   color: #1560BD;
   text-align: center;
   margin-bottom: 10px;
@@ -49,7 +49,7 @@ h1 {
 
 h2 {
   color: #829FC4;
-  font-size: 2vw;
+  font-size: 3vw;
   margin-bottom: 20px;
   padding-bottom: 20px;
   text-align: center;
@@ -125,6 +125,10 @@ ul.nav.navbar-nav {
   text-align: center;
 }
 
+.email {
+  font-size: 1vw;
+}
+
 .final-words {
   text-align: center;
   font-family: sans-serif;
@@ -138,28 +142,6 @@ ul.nav.navbar-nav {
   margin-bottom: 250px;
 }
 
-.row {
-  padding-bottom: 20px;
-  margin: 20px;
-}
-
-.card {
-  height: 100%;
-}
-
-.card-title {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.product-display {
-  display: block;
-}
-
-.shiny-products {
-  align: center;
-  margin-top: 15px;
-}
 
 .shiny-btn {
   margin-bottom: 20px;
@@ -179,8 +161,8 @@ ul.nav.navbar-nav {
 }
 
 .footer-link {
-  padding-left:20px;
-  padding-right: 20px;
+  padding-left:10px;
+  padding-right: 10px;
 }
 
 

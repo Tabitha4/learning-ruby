@@ -1,1 +1,15 @@
 <h1>Your Shiny Object Order:</h1>
+
+  <div class="row container-fluid orders">
+    <% @orders.each do |order| %>
+      <div class="col-sm-12 col-md-6 each-order">
+        <h2>
+          Order # <%= order.id %>:
+          <br>
+          <%= link_to order.product.name, order.product %>
+        </h2>
+        <p><%= order.product.description %></p>
+        <strong>$ <%= order.product.price %></strong>
+      </div><!-- /col -->
+    <% end %>
+  </div>

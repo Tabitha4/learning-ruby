@@ -1,15 +1,17 @@
-<div class="col-sm-6 col-md-4 col-lg-3">
-  <div class="product-display">
-    <%= link_to image_tag(product.image_url, class: "img-responsive image-shaping"), product %>
-    <h1><%= link_to product.name, product %></h1>
-    <p class="product-words"><%= product.description %></p>
-    <p class="product-words"><strong>Colour: </strong><%= product.colour %></p>
-    <p class="product-words"><strong>Price: </strong>$<%= product.price %> CAD</p>
-  </div>
 
-  <div class="edit_destroy_links">
-    <%= link_to 'Edit', edit_product_path(product) %> |
-    <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
-  </div>
+<div class="col-xs-12 col-sm-4 col-lg-3">
+  <div class="container-fluid">
+    <div class="product-display">
+      <%= link_to image_tag(product.image_url, class: "img-responsive image-shaping"), product %>
+      <p class="product-words-name"><%= link_to product.name, product %></p>
+      <p class="product-words-description"><%= product.description %></p>
+      <p class="product-words"><strong>Colour: </strong><%= product.colour %></p>
+      <p class="product-words"><strong>Price: </strong>$<%= product.price %> CAD</p>
+    </div>
 
+    <div class="edit_destroy_links">
+      <%= link_to 'Edit', edit_product_path(product) %> |
+      <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
+    </div>
+  </div>
 </div>
