@@ -3,7 +3,7 @@
   <div class="container-fluid">
 
     <div class="product-display">
-      <%= link_to image_tag(product.image_url, class: "img-responsive image-shaping"), product unless @image.blank? %>
+      <%= link_to image_tag(product.image_url, class: "img-responsive image-shaping"), product %>
       <p class="product-words-name"><%= link_to product.name, product %></p>
       <p class="product-words-description"><%= product.description %></p>
       <p class="product-words"><strong>Colour: </strong><%= product.colour %></p>
