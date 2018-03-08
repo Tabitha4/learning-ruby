@@ -1,1 +1,16 @@
 <h1>S O S Order Details:</h1>
+
+<div class="container">
+  <h2>Order Information</h2>
+  <p>
+  <strong>Order #: </strong><%= @order.id %>
+  <br>
+  <strong>Product Name: </strong><%= @order.product.description %>
+  <br>
+  <strong>Product Price: </strong><%= @order.product.price %>
+  <br>
+  <strong>Total Price: </strong><%= @order.total %>
+  </p>
+  <br>
+  <%= link_to 'Home', root_path %>
+</div>

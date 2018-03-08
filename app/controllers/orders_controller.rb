@@ -1,6 +1,6 @@
 class OrdersController < ApplicationController
   before_action :set_order, only: [:show, :edit, :update, :destroy]
-  
+
   def index
     @orders = Order.includes(:product).all
   end
@@ -16,5 +16,6 @@ class OrdersController < ApplicationController
 
   def destroy
   end
+
 
 end

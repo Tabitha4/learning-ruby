@@ -4,6 +4,7 @@
 
 .products_wrapper {
   max-width: 100%;
+  display: inline-block;
 }
 
 .sub_header {
@@ -133,7 +134,5 @@
 
 .each-order {
   text-align: center;
-  
   margin-bottom: 50px;
-
 }

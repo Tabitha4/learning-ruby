@@ -1,9 +1,9 @@
-<div class="container-fluid">
+<div class="container-fluid class="feature-cont">
   <header>
     <h1 class="feature_product_title">Featured Product</h1>
   </header>
 
-  <div id="carousel" class="carousel slide" data-ride="carousel">
+  <div id="carousel" class="carousel slide feature-carousel" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#carousel" data-slide-to="0" class="active"></li>
@@ -14,11 +14,8 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <% @products.each do |product| %>
-        <div class="item<%= " active" if product == @products.first %>">
+        <div class="feature-img item<%= " active" if product == @products.first %>">
           <%= image_tag(product.image_url) %>
-          <div class="carousel-caption d-none d-lg-block">
-            <h3><%= product.name %></h3>
-          </div>
         </div>
       <% end %>
     </div>
@@ -35,3 +32,9 @@
   </div>
 
 </div><!-- End Container -->
+
+<div class="feature-words">
+  <h3 class="actual-words">Just a quick peek for ya, to lure you to the light. Is it working? Good! follow the links for further investigation.</h3 class="actual-words">
+</div>
+
+<div class="faux-logo"></div>
