@@ -1,16 +1,24 @@
+<p id="notice"><%= notice %></p>
 <h1>S O S Order Details:</h1>
 
 <div class="container">
   <h2>Order Information</h2>
   <p>
-  <strong>Order #: </strong><%= @order.id %>
-  <br>
-  <strong>Product Name: </strong><%= @order.product.description %>
-  <br>
-  <strong>Product Price: </strong><%= @order.product.price %>
-  <br>
-  <strong>Total Price: </strong><%= @order.total %>
+    <strong>Order #: </strong><%= @order.id %>
   </p>
   <br>
-  <%= link_to 'Home', root_path %>
+  <p>Product Name: </p><%= @order.product.description %>
+  <br>
+  <p>
+    <strong>Product Price: </strong><%= @order.product.price %>
+  </p>
+  <br>
+  <p>
+    <strong>Total Price: </strong><%= @order.total %>
+  </p>
+  <br>
+  <p>
+    <%= link_to 'Edit', edit_product_path(@product) %> |
+    <%= link_to 'Back', :back %>
+  </p>
 </div>

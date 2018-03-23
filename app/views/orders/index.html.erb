@@ -4,9 +4,10 @@
       <div class="col-sm-12 col-md-6 each-order" id="order-index">
         <h2>
           Order # <%= order.id %>:
-          <br>
-          <%= link_to order.product.name, order.product %>
         </h2>
+        <h3>
+          <%= link_to order.product.name, order.product %>
+        </h3>
         <p><%= order.product.description %></p>
         <strong>$ <%= order.product.price %></strong>
       </div><!-- /col -->

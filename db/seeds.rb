@@ -5,3 +5,6 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+#Order.create(user_id: 1, product_id: 1, total: 8.99)
+#Order.create(user_id: 2, product_id: 2, total: 10.99)

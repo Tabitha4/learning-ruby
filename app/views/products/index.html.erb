@@ -16,5 +16,10 @@
     <%= render @products %>
   </div><!-- /container -->
 
-  <div class="new_product" style="text-align: center"><%= link_to 'New Product', new_product_path %></div>
+  <div class="new_product" style="text-align: center">
+    <%= link_to 'New Product', new_product_path %>
+  </div>
+  <div class="pagination" style="text-align: center;">
+    <%= will_paginate @products %>
+  </div>
   <%= image_tag("products_banner-igor-ovsyannykov-atUnsplash.jpg", class:"img-responsive product_banner", alt: "A string of shiny bubble lights that shine!") %>
