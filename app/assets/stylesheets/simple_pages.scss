@@ -6,27 +6,21 @@ body {
     color: #000;
 }
 
-
+//Navbar
 .navbar-brand {
   font-family: 'Sedgwick Ave Display', cursive;
   font-size: 2em;
 }
-
 
 .navbar-default {
   background-color: #829FC4;
   border: none;
 }
 
-
-.navbar-default .navbar-brand {
-  color: #fff;
-}
-
+.navbar-default .navbar-brand,
 .navbar-default .navbar-nav li a {
   color: #fff;
 }
-
 
 li a:hover {
   background-color: red;
@@ -37,7 +31,36 @@ li a:hover {
   color: #1560BD;
 }
 
+ul {
+  padding-top: 30px;
+}
 
+ul.nav.navbar-nav {
+  padding-top: 0;
+}
+
+.search-form {
+  padding-top: 15px;
+}
+
+//Footer
+.sticky-footer {
+  background-color: #829FC4;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  line-height: 40px;
+}
+
+.footer-link a,
+.footer-icons a{
+  color: #fff;
+  padding-left:20px;
+  padding-right: 20px;
+}
+
+//Home Page
 h1 {
   font-family: sans-serif;
   font-size: 8vw;
@@ -46,23 +69,12 @@ h1 {
   margin-bottom: 10px;
 }
 
-
 h2 {
   color: #829FC4;
   font-size: 3vw;
   margin-bottom: 20px;
   padding-bottom: 20px;
   text-align: center;
-}
-
-
-ul {
-  padding-top: 30px;
-}
-
-
-ul.nav.navbar-nav {
-  padding-top: 0;
 }
 
 .my-image {
@@ -88,7 +100,6 @@ ul.nav.navbar-nav {
 }
 
 // About Page
-
 .about-header {
   font-size: 4vw;
 }
@@ -115,6 +126,7 @@ ul.nav.navbar-nav {
   line-height: 40px;
 }
 
+//Contact Page
 .jumbotron {
   margin:0 auto;
   max-width: 80%;
@@ -123,7 +135,6 @@ ul.nav.navbar-nav {
   margin-bottom: 100px;
   box-shadow: 2px 2px 6px rgba(0,0,0,0.6);
 }
-
 
 .jumbotron h1 {
   color: #1560BD;
@@ -156,38 +167,12 @@ ul.nav.navbar-nav {
   margin-bottom: 250px;
 }
 
-
 .shiny-btn {
   margin-bottom: 20px;
 }
 
 .lead {
   text-align: center;
-}
-
-.sticky-footer {
-  background-color: #829FC4;
-  text-align: center;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  line-height: 40px;
-}
-
-.footer-link {
-  padding-left:10px;
-  padding-right: 10px;
-}
-
-
-.footer-link a{
-  color: #fff;
-}
-
-.footer-icons a{
-  color: #fff;
-  padding-left:20px;
-  padding-right: 20px;
 }
 
 //Landing Page

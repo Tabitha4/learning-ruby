@@ -83,3 +83,20 @@ div {
 label {
   display: block;
 }
+
+input {
+  border-radius: 5px;
+}
+
+input[type="submit" i] {
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+  background-color: #829FC4;
+  border-color: #fff;
+  color: #fff;
+}
+
+input[type="submit" i]:hover {
+  background-color: #fff;
+  border-color: #829FC4;
+  color: #829FC4;
+}
