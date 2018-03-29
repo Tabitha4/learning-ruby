@@ -1,0 +1,79 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+//Index Page
+.shiny-new-user-header {
+  margin-bottom: 30px;
+}
+
+.user-index-content {
+  max-width: 50%;
+}
+
+.users-info {
+  text-align: center;
+  list-style: none;
+  color: black;
+  margin-bottom: 30px;
+}
+
+.first-last-name {
+  line-height: 30px;
+}
+
+.users-show-edit-back {
+  margin-top: 40px;
+}
+
+.new-user-q-btn {
+  text-align: center;
+  font-size: 2.5vw;
+  margin-bottom: 30px;
+}
+
+.new-user-q-btn a {
+  text-decoration: none;
+}
+
+.user-index-back {
+  text-align: center;
+}
+
+//Show Page
+.show-links {
+  text-align: center;
+}
+
+.current-user-header {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.user-fn,
+.user-ln {
+  background-color: #E6EFFA;
+}
+
+//Form Page
+.update-user {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+.user-fn,
+.user-ln {
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+//Edit Page
+.edit-links {
+  text-align: center;
+}
+
+.edit-user-header {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
