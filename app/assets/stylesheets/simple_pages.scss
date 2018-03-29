@@ -50,10 +50,14 @@ ul.nav.navbar-nav {
   position: fixed;
   bottom: 0;
   width: 100%;
-  line-height: 40px;
+  line-height: 20px;
 }
 
-.footer-link a,
+.footer-icons {
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
 .footer-icons a{
   color: #fff;
   padding-left:20px;
@@ -145,12 +149,22 @@ h2 {
   box-shadow: 2px 2px 6px rgba(0,0,0,0.6);
 }
 
+.form-group {
+  max-width: 75%;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
 .contactInfo {
   color: #1560BD;
   text-align: center;
 }
 
-.email {
+.shiny-number {
+  margin-top: 30px;
+}
+
+.shiny-email {
   font-size: 1vw;
 }
 
