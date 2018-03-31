@@ -33,12 +33,15 @@
             <li><%= link_to "About", simple_pages_about_path %></li>
             <li><%= link_to "Products", products_path %></li>
             <li><%= link_to "Orders", orders_path %></li>
-            <li><%= link_to "Sign Up", users_path %></li>
-            <li><%= link_to "Login", users_path %></li>
             <li><%= link_to "Contact", simple_pages_contact_path %></li>
-
-            <!-- Search Form -->
-            <li class="search-form">
+            <li><!-- Logout -->
+              <% if user_signed_in? %>
+                <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
+              <% else %>
+                <%= link_to('Login', new_user_session_path) %>
+              <% end %>
+            </li>
+            <li class="search-form"><!-- Search Form -->
               <%= form_with(url: products_path, method: 'get', local: true) do |form| %>
                 <div class="form-field-and-submit">
                   <%= form.text_field :q, id: 'q', value: params[:q], placeholder: "Search for it!", class: "search-field" %>
@@ -46,12 +49,13 @@
                 </div>
                 <% end %>
             </li>
-          </ul>
-
+          </ul><!-- end navbar-links -->
         </div><!-- end navbar-collapse -->
       </div><!-- end container-fluid -->
     </nav><!-- end navbar -->
 
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
     <%= yield %>
 
     <footer class="sticky-footer" id="sticky-footer">
