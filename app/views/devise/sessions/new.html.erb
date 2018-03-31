@@ -4,6 +4,7 @@
   <div class="field sessions-field-label">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    <%= @user.email if @user.email? %>
   </div>
 
   <div class="field sessions-field-label">
