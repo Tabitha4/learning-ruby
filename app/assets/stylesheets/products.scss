@@ -9,6 +9,7 @@
 
 .sub_header {
   background-image: url("products_banner-igor-ovsyannykov-atUnsplash.jpg");
+  border-radius: 5px;
   background-size: cover;
   max-width: 100%;
   height: auto;
@@ -16,11 +17,11 @@
   padding: 27px 0;
   letter-spacing: 3px;
   color: #fff;
-  font-size: 3em;
   text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
 }
 
 .product_banner {
+  border-radius: 5px;
   margin-top: 20px;
   margin-bottom: 120px;
   max-width: 100%;
@@ -31,6 +32,10 @@
 .product_images {
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
   margin-bottom: 30px;
+}
+
+.product-words-name {
+  font-size: 3em;
 }
 
 .product-words-pic,
@@ -45,7 +50,6 @@
 .product-words-name,
 .product-words-description {
   line-height: normal;
-  font-size: 2vw;
 }
 
 
@@ -66,7 +70,7 @@
 
 .show-product-name {
   color: #1560BD;
-  font-size: 4vw;
+  //font-size: 4vw;
   font-weight: 400;
   line-height: normal;
   margin-bottom: 60px;
@@ -94,7 +98,6 @@
   margin-bottom: 40px;
   color: #1560BD;
 }
-
 
 .update-button {
   margin-bottom: 200px;

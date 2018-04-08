@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
-  
+  before_action :authenticate_user!, except: [:show, :index]
+  load_and_authorize_resource
 
 
   # GET /users
@@ -44,7 +45,7 @@ class UsersController < ApplicationController
   def update
     respond_to do |format|
       if @user.update(user_params)
-        format.html { redirect_to @user, notice: 'Hey, your info is updated!' }
+        format.html { redirect_to @user, notice: 'Hey, your User info is updated!' }
         format.json { render :show, status: :ok, location: @user }
       else
         format.html { render :edit }
@@ -58,7 +59,7 @@ class UsersController < ApplicationController
   def destroy
     @user.destroy
     respond_to do |format|
-      format.html { redirect_to users_url, notice: 'Booo, user was successfully destroyed.' }
+      format.html { redirect_to users_url, notice: 'Booo, User was successfully destroyed.' }
       format.json { head :no_content }
     end
   end

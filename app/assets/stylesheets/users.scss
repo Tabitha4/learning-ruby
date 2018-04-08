@@ -28,7 +28,6 @@
 
 .new-user-q-btn {
   text-align: center;
-  font-size: 2.5vw;
   margin-bottom: 30px;
 }
 
@@ -85,6 +84,10 @@
   }
 
   //Registrations - New Page
+  .devise-reg-new-back-link {
+    text-align: center;
+    padding-top: 20px;
+  }
 
   //Sessions - New Page
   .sessions-field-label {
