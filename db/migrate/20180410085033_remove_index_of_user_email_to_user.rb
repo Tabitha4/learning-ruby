@@ -1,8 +1,12 @@
 class RemoveIndexOfUserEmailToUser < ActiveRecord::Migration[5.1]
   def up
-    remove_index :users, :email
+    remove_index "users", :name =>"index_users_on_email"
+    add_index "users", ["email"], :name => "index_users_on_identity", :unique => true
   end
+
   def down
-    add_index :users, :email,:unique => true
+    remove_index "users", :name => "index_users_on_identity"
+    add_index "users", ["email"], :name => "index_users_on_email", :unique => true
   end
+
 end
