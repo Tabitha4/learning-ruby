@@ -1,10 +1,19 @@
-<p id="notice"><%= notice %></p>
-<h1 class="current-user-header">This is you right?</h1>
+<div class="container text-center">
+  <p id="notice"><%= notice %></p>
+  <h1 class="current-user-header">This is you right?</h1>
 
-<%= render 'form', user: @user %>
+	<p>
+	  <strong>First Name:</strong>
+	  <%= @user.first_name %>
+	</p>
 
-<div class="show-links">
-  <%= link_to 'Show', @user %> |
-  <%= link_to 'Edit', edit_user_path(@user) %> |
-  <%= link_to 'Back', users_path %>
+	<p>
+	  <strong>Last Name:</strong>
+	  <%= @user.last_name %>
+	</p>
+
+  <div class="show-links">
+    <%= link_to 'Edit', edit_user_path(@user) %> |
+    <%= link_to 'Back', users_path %>
+  </div>
 </div>
