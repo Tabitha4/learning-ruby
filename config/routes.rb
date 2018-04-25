@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
 
   devise_for :users
+<<<<<<< HEAD
 
+=======
+>>>>>>> 16ea28daddf4276dd75e8890de1157afb65d56ce
   resources :users
   resources :products
   resources :orders, only: [:index, :show, :create, :destroy]
