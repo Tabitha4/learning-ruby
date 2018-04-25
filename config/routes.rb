@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  devise_for :users, path:'', path_names: { sign_in: 'login', sign_out: 'logout' }, controllers: { registrations: "user_registrations" }
+  devise_for :users
 
   resources :users
   resources :products
@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   get 'simple_pages/contact'
   get 'simple_pages/index'
   get 'simple_pages/landing_page'
-  
+
 
   post 'simple_pages/thank_you'
 
