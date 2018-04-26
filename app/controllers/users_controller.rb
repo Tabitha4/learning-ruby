@@ -9,7 +9,7 @@ class UsersController < ApplicationController
   # GET /users
   # GET /users.json
   def index
-    @user = current_user.email
+    @user = User.all
   end
 
   # GET /users/1
@@ -69,7 +69,9 @@ class UsersController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_user
-      @user = User.find(params[:id])
+      if sign_out
+        redirect_to root_url, notice: 'Hey, so glad you stopped in. Come back any time!'
+      end
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

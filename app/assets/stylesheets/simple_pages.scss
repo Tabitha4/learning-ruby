@@ -5,6 +5,7 @@
 body {
     color: #000;
     padding-top: 80px;
+    margin-bottom: 30px;
 }
 
 //Navbar
@@ -247,9 +248,13 @@ h2 {
   bottom: 0;
   width: 100%;
   line-height: 20px;
+  font-size: 15px;
+  color: #fff;
+  padding-bottom: 10px;
 }
 
 .footer-icons {
+  color: #fff;
   padding-top: 10px;
   padding-bottom: 5px;
 }
@@ -258,4 +263,22 @@ h2 {
   color: #fff;
   padding-left:20px;
   padding-right: 20px;
+}
+
+.social-icons {
+  color: #fff;
+}
+
+.social-icons .fa-2x {
+  font-size: 1.2em;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+a.social-icons .fa-2x {
+  color: #fff;
+}
+
+a:hover.social-icons .fa-2x {
+  color: #000;
 }
