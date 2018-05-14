@@ -54,6 +54,10 @@
   background-color: #E6EFFA;
 }
 
+.edit-back-show-page {
+  padding-top: 30px;
+}
+
 //Form Page
 .update-user {
   text-align: center;
@@ -86,6 +90,14 @@
   //Registrations - New Page
   .devise-reg-new-back-link {
     text-align: center;
+    padding-top: 20px;
+  }
+
+  .first-last-signup {
+    padding-bottom: 20px;
+  }
+
+  .registrations-field-label {
     padding-top: 20px;
   }
 

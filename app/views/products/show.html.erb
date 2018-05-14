@@ -1,33 +1,66 @@
 <p id="notice"><%= notice %></p>
-<div class="show_products_page container-fluid">
+<div class="show_products_page container-fluid text-center col-xs-12 col-md-6">
 
-    <p>
-      <%= image_tag(@product.image_url, class: "img-responsive image-shaping" ) %>
-    </p>
+  <p>
+    <%= image_tag(@product.image_url, class: "img-responsive image-shaping") %>
+  </p>
 
-    <p class="show-product-name">
-      <%= @product.name %>
-    </p>
+  <p class="show-product-name">
+    <%= @product.name %>
+  </p>
 
-    <p class="product-description">
-      <%= @product.description %>
-    </p>
+  <p class="product-description">
+    <%= @product.description %>
+  </p>
 
-    <p>
-      <strong>Colour:</strong>
-      <%= @product.colour %>
-    </p>
+  <p>
+    <strong>Colour:</strong>
+    <%= @product.colour %>
+  </p>
 
-    <p class="product-price">
-      <strong>Price:</strong>
-      $<%= @product.price %> CAD
-    </p>
+  <p class="product-price">
+    <strong>Price:</strong>
+    $<%= @product.price %> CAD
+  </p>
 
-    <div class="edit-back-show-page">
-      <%= link_to 'Edit', edit_product_path(@product) %> |
-      <%= link_to 'Back', :back %>
-    </div>
-
-    <p class="blurb"><i>Keep checking for new Shiny's!</i></p>
+  <%= link_to 'Edit Product', edit_product_path(@product) %> |
+  <%= link_to 'Go Back', :back %>
 
 </div>
+
+<div class="container-fluid text-center col-xs-12 col-md-6 ratings">
+    <!-- Average Rating -->
+    <p class="average-rating-words">Average Rating
+      <div class="average-rating-number rated"> <%= @product.average_rating %></div>
+    </p>
+
+    <!-- Highest Rating -->
+    <p class="highest-rating-words"> Highest Rating
+      <div class="highest-rating-number"><%= @product.highest_rating_comment %></div>
+    </p>
+</div>
+
+    <!-- Comments -->
+<div class="container-fluid text-center col-xs-12 col-md-6 ratings-comments">
+    <div class="comments">
+      <%= render 'comments' %>
+    </div>
+    <%= will_paginate @comments %>
+</div>
+
+<div class="container-fluid text-center col-xs-12 new-comments">
+  <div class="new-comment">
+    <%= render 'new_comment' %>
+  </div>
+</div>
+
+
+
+
+<div class="alert alert-info" style="display:none" role="alert">
+  <p>Hey! You left a new comment, Thanks!</p>
+</div>
+
+
+
+<p class="blurb container-fluid text-center col-xs-12"><i><strong>Keep checking for new Shiny's!</strong></i></p>

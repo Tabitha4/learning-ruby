@@ -65,24 +65,24 @@
 
 .show_products_page {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 60px;
 }
 
 .show-product-name {
   color: #1560BD;
-  //font-size: 4vw;
+  font-size: 3em;
   font-weight: 400;
   line-height: normal;
   margin-bottom: 60px;
 }
 
 .product-description {
-  font-weight: 600;
+  font-weight: 400;
   font-style: italic;
 }
 
 .product-price {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 .show_back_links {
@@ -91,10 +91,11 @@
 }
 
 .edit-back-show-page {
-  margin-bottom: 200px;
+  padding-bottom: 35px;
 }
 
 .blurb {
+  letter-spacing: 2px;
   margin-bottom: 40px;
   color: #1560BD;
 }
@@ -138,4 +139,35 @@
 .each-order {
   text-align: center;
   margin-bottom: 50px;
+}
+
+.ratings {
+  margin-top: 60px;
+}
+
+hr {
+  border-top: 2px solid #829FC4;
+}
+
+.average-rating-words,
+.highest-rating-words {
+  color: #1560BD;
+}
+
+.average-rating-words,
+.highest-rating-words {
+  display: inline;
+}
+
+.average-rating-number,
+.highest-rating-number {
+  display: inline-block;
+}
+
+.new-comment {
+  max-width: 100%;
+}
+
+.leave-comment-text {
+  padding-top: 80px;
 }
