@@ -31,16 +31,17 @@
 <div class="container-fluid text-center col-xs-12 col-md-6 ratings">
     <!-- Average Rating -->
     <p class="average-rating-words">Average Rating
-      <div class="average-rating-number rated"> <%= @product.average_rating %></div>
+      <div class="average-rating-number rated" data-score="<%= @product.average_rating %>"></div>
     </p>
 
     <!-- Highest Rating -->
     <p class="highest-rating-words"> Highest Rating
-      <div class="highest-rating-number"><%= @product.highest_rating_comment %></div>
+      <div class="highest-rating-number" data-score=" <%= @product.highest_rating_comment %>"></div>
     </p>
 </div>
 
     <!-- Comments -->
+
 <div class="container-fluid text-center col-xs-12 col-md-6 ratings-comments">
     <div class="comments">
       <%= render 'comments' %>
@@ -48,19 +49,14 @@
     <%= will_paginate @comments %>
 </div>
 
-<div class="container-fluid text-center col-xs-12 new-comments">
+<div class="container-fluid text-center col-xs-12 new-comments-div">
   <div class="new-comment">
     <%= render 'new_comment' %>
   </div>
 </div>
 
-
-
-
 <div class="alert alert-info" style="display:none" role="alert">
   <p>Hey! You left a new comment, Thanks!</p>
 </div>
-
-
 
 <p class="blurb container-fluid text-center col-xs-12"><i><strong>Keep checking for new Shiny's!</strong></i></p>
