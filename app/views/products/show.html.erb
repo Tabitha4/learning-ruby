@@ -1,5 +1,5 @@
 <p id="notice"><%= notice %></p>
-<div class="show_products_page container-fluid text-center col-xs-12 col-md-6">
+<div class="show_products_page container-fluid text-center col-xs-12">
 
   <p>
     <%= image_tag(@product.image_url, class: "img-responsive image-shaping") %>
@@ -28,21 +28,19 @@
 
 </div>
 
-<div class="container-fluid text-center col-xs-12 col-md-6 ratings">
+<div class="container-fluid text-center col-xs-12 ratings">
     <!-- Average Rating -->
-    <p class="average-rating-words">Average Rating:
-      <div class="average-rating-number rated"> <%= @product.average_rating %></div>
-    </p>
-
+    <div class="average-rating-words highest-rating-words">
+      Average Rating:
+      <p class="average-rating-number rated"> <%= @product.average_rating %></p>
     <!-- Highest Rating -->
-    <p class="highest-rating-words"> Highest Rating:
-      <div class="highest-rating-number" data-score=" <%= @product.highest_rating_comment %>"></div>
-    </p>
+       Highest Rating:
+      <p class="highest-rating-number rated"> <%= @product.highest_rating_comment %></p>
+    </div>
 </div>
 
     <!-- Comments -->
-
-<div class="container-fluid text-center col-xs-12 col-md-6 ratings-comments">
+<div class="container-fluid text-center col-xs-12 ratings-comments">
     <div class="comments">
       <%= render 'comments' %>
     </div>
