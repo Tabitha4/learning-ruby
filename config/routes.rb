@@ -3,12 +3,10 @@ Rails.application.routes.draw do
   devise_for :users
 
   resources :users
-  resources :products
-  resources :orders, only: [:index, :show, :create, :destroy]
-
-  resources :products, only: [:show] do
-    resources :comments, only: [:create, :edit, :update, :destroy]
+  resources :products do
+    resources :comments
   end
+  resources :orders, only: [:index, :show, :create, :destroy]
 
   get 'simple_pages/about'
   get 'simple_pages/contact'

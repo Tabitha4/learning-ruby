@@ -1,14 +1,12 @@
 <div class="product-comment">
 <% if signed_in? %>
   <h2 id="review-header" class="leave-comment-text">Have something you want to say?</h2><br>
-  <%= form_for([@product, @product.comments.build], remote: true) do |f| %>
+  <%= form_for([@product, @product.comments.build]) do |f| %>
     <p class="comment-here-field">
       <%= f.text_area :body, placeholder: "Comment here", class: "text-center comment-here" %>
     </p>
     <p>
-      <div class="rating-field">
-        <%= f.text_field :rating, placeholder: "Rate us, we can take it!", class: "rating" %>
-      </div>
+      <div class="rating"></div>
     </p>
     <p>
       <%= f.submit "Submit" %>
