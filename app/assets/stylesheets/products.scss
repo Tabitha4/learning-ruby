@@ -73,16 +73,11 @@
   font-size: 3em;
   font-weight: 400;
   line-height: normal;
-  margin-bottom: 60px;
 }
 
 .product-description {
   font-weight: 400;
   font-style: italic;
-}
-
-.product-price {
-  margin-bottom: 30px;
 }
 
 .show_back_links {
@@ -141,12 +136,9 @@
   margin-bottom: 50px;
 }
 
-.ratings {
-  margin-top: 60px;
-}
-
 hr {
-  border-top: 2px solid #829FC4;
+  border-top: 2px solid #CBCFD4;
+  max-width: 80%;
 }
 
 .average-rating-words,
