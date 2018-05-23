@@ -25,14 +25,14 @@
 
   <div class="container-fluid text-center col-xs-12 ratings">
       <!-- Average Rating -->
-      <div class="average-rating-words highest-rating-words">
-        <strong>Average Rating:</strong>
-        <p class="average-rating-number rated">  <%= @product.average_rating %></p>
+      <p class="average-rating-words highest-rating-words">
+        <strong>Average Rating </strong>
+        <div class="average-rating-number rated" data-score="<%= @product.average_rating %>"></div>
         <br>
       <!-- Highest Rating
          Highest Rating:
         <p class="highest-rating-number rated">  <%= @product.highest_rating_comment %></p> -->
-      </div>
+      </p>
   </div>
 
   <%= link_to 'Edit Product', edit_product_path(@product) %> |
