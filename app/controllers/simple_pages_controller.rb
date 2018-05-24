@@ -13,7 +13,7 @@ class SimplePagesController < ApplicationController
     @message = params[:message]
     ActionMailer::Base.mail(from: @email,
       to: 'tab.codes@gmail.com',
-      subject: "Here's a message from #{@name}",
+      subject: "Here's a VERY important message from #{@name}",
       body: @message).deliver_now
   end
 
