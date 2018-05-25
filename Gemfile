@@ -41,6 +41,7 @@ group :development, :test do
   gem 'selenium-webdriver'
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
+  gem 'rspec-rails', '~> 3.7'
 end
 
 group :development do
@@ -61,4 +62,4 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise'
 gem 'cancancan', '~> 1.10'
-gem 'ratyrate' 
+gem 'ratyrate'
