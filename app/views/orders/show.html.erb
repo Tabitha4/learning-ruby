@@ -7,6 +7,7 @@
     <strong>Order #: </strong><%= @order.id %>
   </p>
   <br>
+  <%= image_tag(order.product.image_url, :class => "img-fluid p-2") %>
   <p>Product Name: </p><%= @order.product.description %>
   <br>
   <p>

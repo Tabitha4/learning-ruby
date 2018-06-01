@@ -4,13 +4,22 @@
     <% @orders.each do |order| %>
       <div class="col-sm-12 col-md-6 each-order" id="order-index">
         <h2>
-          Order # <%= order.id %>:
+          Shiny Order # <%= order.id %>:
         </h2>
         <h3>
           <%= link_to order.product.name, order.product %>
         </h3>
+        <%= image_tag(order.product.image_url, :class => "img-fluid p-2") %>
         <p><%= order.product.description %></p>
-        <strong>$ <%= order.product.price %></strong>
+        <p>$ <%= order.product.price %></p>
+        <strong><%= "Your Total: #{order.total} $" %></strong>
+        <p class="text-primary">
+        <%= "Issued by: #{order.user.full_name}" unless order.user.full_name.blank? %>
+      </p>
+      <%= link_to 'View', order, :class => "btn btn-info btn-link btn-lg" %>
       </div><!-- /col -->
     <% end %>
+    <div class="text-center">
+      <%= link_to 'Back', products_path, :class => " btn btn-defualt btn-link btn-lg" %>
+    </div>
   </div>
