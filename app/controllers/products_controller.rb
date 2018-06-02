@@ -10,7 +10,7 @@ class ProductsController < ApplicationController
     else
       name_env = "name ilike ?"
     end
-    
+
     if params[:q]
       search_term = params[:q]
       @products = Product.search(search_term).paginate(:page => params[:page], per_page: 4)
@@ -39,6 +39,7 @@ class ProductsController < ApplicationController
   # POST /products
   # POST /products.json
   def create
+    #byebug
     @product = Product.new(product_params)
     @comment.user = comment.user.first_name
 
