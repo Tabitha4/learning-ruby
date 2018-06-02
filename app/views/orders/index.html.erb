@@ -13,10 +13,7 @@
         <p><%= order.product.description %></p>
         <p>$ <%= order.product.price %></p>
         <strong><%= "Your Total: #{order.total} $" %></strong>
-        <p class="text-primary">
-        <%= "Issued by: #{order.user.full_name}" unless order.user.full_name.blank? %>
-      </p>
-      <%= link_to 'View', order, :class => "btn btn-info btn-link btn-lg" %>
+        <%= link_to 'View', order, :class => "btn btn-info btn-link btn-lg" %>
       </div><!-- /col -->
     <% end %>
     <div class="text-center">
