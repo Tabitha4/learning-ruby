@@ -1,5 +1,5 @@
-$(document).on('turbolinks:load ajaxSuccess', function() {
-  
+var refreshRating = function() {
+
 //Raty for ratings of products on products show page
   $('.rating').raty({
   	starHalf: '<%= asset_path 'star-half.png' %>',
@@ -16,8 +16,11 @@ $(document).on('turbolinks:load ajaxSuccess', function() {
         return $(this).attr('data-score');
       }
     });
+}
 
-
+$(document).on('turbolinks:load ajaxSuccess', function() {
+  refreshRating();
+  
 //ElevateZoom for products show page
   $("#img-zoom").elevateZoom({
     responsive: true,
