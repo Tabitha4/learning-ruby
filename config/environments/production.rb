@@ -91,12 +91,13 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 end
 
-config.cache_store = :dalli_store,
-                    (ENV["mc3.dev.ec2.memcachier.com:11211"] || "").split(","),
-                    {:username => ENV["80C1AC"],
-                     :password => ENV["C0695442368F75BA63DACB3D322C2E98"],
-                     :failover => true,
-                     :socket_timeout => 1.5,
-                     :socket_failure_delay => 0.2,
-                     :down_retry_delay => 60
-                    }
+ #Memcache and Dalli
+ config.cache_store = :dalli_store,
+    (ENV["MEMCACHIER_SERVERS"] || "").split(","),
+    {:username => ENV["MEMCACHIER_USERNAME"],
+      :password => ENV["MEMCACHIER_PASSWORD"],
+      :failover => true,
+      :socket_timeout => 1.5,
+      :socket_failure_delay => 0.2,
+      :down_retry_delay => 60
+    }
