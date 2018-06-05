@@ -10,11 +10,16 @@
     <h2 class="sub_header" style="text-align: center"><strong>SOS Collection</strong></h2>
   </section>
 
+  <% cache(cache_key_for_products) do %>
+    <%= render @products %>
+
   <div class="container-fluid products_wrapper">
     <% @products.each do |product| %>
     <% end %>
     <%= render @products %>
   </div><!-- /container -->
+
+  <% end %>
 
   <div class="new_product" style="text-align: center">
     <%= link_to 'New Product', new_product_path %>

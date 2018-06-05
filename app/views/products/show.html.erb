@@ -1,27 +1,29 @@
 <p id="notice"><%= notice %></p>
 <div class="show_products_page container-fluid text-center col-xs-12">
 
-  <p>
-    <%= image_tag(@product.image_url, class: "img-responsive image-shaping product-zoom", height: 200, width: 300, id: "img-zoom", data_zoom_image: @product.image_url) %>
-  </p>
+  <% cache @product do %>
+    <p>
+      <%= image_tag(@product.image_url, class: "img-responsive image-shaping product-zoom", height: 200, width: 300, id: "img-zoom", data_zoom_image: @product.image_url) %>
+    </p>
 
-  <p class="show-product-name">
-    <%= @product.name %>
-  </p>
+    <p class="show-product-name">
+      <%= @product.name %>
+    </p>
 
-  <p class="product-description">
-    <%= @product.description %>
-  </p>
+    <p class="product-description">
+      <%= @product.description %>
+    </p>
 
-  <p>
-    <strong>Colour:</strong>
-    <%= @product.colour %>
-  </p>
+    <p>
+      <strong>Colour:</strong>
+      <%= @product.colour %>
+    </p>
 
-  <p class="product-price">
-    <strong>Price:</strong>
-    <%= number_to_currency@product.price %> CAD
-  </p>
+    <p class="product-price">
+      <strong>Price:</strong>
+      <%= number_to_currency@product.price %> CAD
+    </p>
+  <% end %>
 
   <%= form_with(url: '/payments/create') do |form| %>
     <%= hidden_field_tag(:product_id, @product.id) %>
@@ -37,6 +39,7 @@
         <br>
       </p>
   </div>
+
 
   <%= link_to 'Edit Product', edit_product_path(@product) %> |
   <%= link_to 'Go Back', :back %>

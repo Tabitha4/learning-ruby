@@ -2,11 +2,17 @@
   <div class="container-fluid">
 
     <div class="product-display">
+
+      <% cache product do %>
+
       <p class="product-words-pic"><%= link_to image_tag(product.image_url, class: "img-responsive image-shaping", height: 200, width: 300,), product %></p>
       <p class="product-words-name"><%= link_to product.name, product %></p>
       <p class="product-words-description"><%= product.description %></p>
       <p class="product-words-color"><strong>Colour: </strong><%= product.colour %></p>
       <p class="product-words-price"><strong>Price: </strong>$<%= product.price %> CAD</p>
+
+      <% end %>
+
         <div class="edit_destroy_links">
           <%= link_to 'Show', product%> |
           <%= link_to 'Edit', edit_product_path(product) %> |
