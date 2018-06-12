@@ -40,11 +40,20 @@
       </p>
   </div>
 
+  <p class="viewed">
+    <span class="badge">
+      <i class="glyphicon glyphicon-eye-open"></i>
+      Viewed
+      <%= @product.viewed %>
+    </span>
+  </p>
 
   <%= link_to 'Edit Product', edit_product_path(@product) %> |
   <%= link_to 'Go Back', :back %>
 
 </div>
+
+
 
     <!-- Comments -->
 <div class="container-fluid text-center col-xs-12 ratings-comments">
