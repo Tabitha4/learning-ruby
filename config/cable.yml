@@ -5,6 +5,6 @@ test:
   adapter: async
 
 production:
-  adapter: redis
-  url: redis://localhost:6379/1
+  adapter: postgresql
+  url: postgres://clcryzzgyplqra:5e6046eec375cfcacafccaee1938683b7f941b1dcc9300d1835799392cfbee88@ec2-107-22-183-40.compute-1.amazonaws.com:5432/d5k9nksbnkqlei
   channel_prefix: learnRails_production

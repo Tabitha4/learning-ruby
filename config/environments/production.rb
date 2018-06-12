@@ -100,4 +100,8 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  # ActionCable setup for Heroku
+  config.web_socket_server_url = "wss://shiny-objects-source.herokuapp.com/cable"
+  config.action_cable.allowed_request_origins = ['https://shiny-objects-source.herokuapp.com', 'http://shiny-objects-source.herokuapp.com']
 end
