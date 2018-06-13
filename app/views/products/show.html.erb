@@ -1,5 +1,5 @@
 <p id="notice"><%= notice %></p>
-<div class="show_products_page container-fluid text-center col-xs-12">
+<div class="show_products_page container-fluid text-center col-xs-12 row" data-product-id="<%= @product.id %>">
 
   <% cache @product do %>
     <p>

@@ -10,6 +10,7 @@ class Comment < ApplicationRecord
   scope :rating_desc, -> { order(rating: :desc) }
   scope :rating_asc, -> { order(rating: :asc) }
 
+  after_create_commit { CommentUpdateJob.perform_later(self, self.user) }
 
   def create
     @product = Product.find(params[:product_id])
