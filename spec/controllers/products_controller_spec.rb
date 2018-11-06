@@ -23,5 +23,6 @@ describe ProductsController, type: :controller do
       get :index, params: {search_term: "shiny"}
       expect(response).to be_successful
     end
+    
 
 end

@@ -1,6 +1,8 @@
 require 'rails_helper'
 
 describe SimplePagesController, type: :controller do
+
+  #GET index page
   context 'GET #index' do
     it 'renders the index template' do
       get :index
@@ -8,4 +10,5 @@ describe SimplePagesController, type: :controller do
       expect(response).to render_template('index')
     end
   end
+
 end
